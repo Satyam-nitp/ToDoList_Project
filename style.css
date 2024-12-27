@@ -1,0 +1,139 @@
+@font-face {
+  font-family: new;
+  src: url(/MontserratAlternates-Medium.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: new;
+}
+
+#wrapper{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: rgba(10, 25, 47, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.maxLimit{
+  width: 40rem;
+  position: absolute;
+  border-radius: 5rem;
+  top: 10px;
+  left: 445px;
+  padding: 10px 10px;
+  opacity: 0;
+  transform: scale(0);
+  color: white;
+  background-color: rgb(7, 96, 96);
+  font-size: 1rem;
+  transform-origin: top;
+  transition: all 250ms ease-in-out;
+  text-align: center;
+}
+.maxLimit.activate{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.container{
+  width: 50rem;
+  height: max-content;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  box-shadow: 0 0 7.5px black;
+  border: rgba(220, 220, 220, 1);
+  border-radius: 0.25rem;
+  margin-top: 50px;
+}
+
+.count{
+  width: max-content;
+  border-radius: 0.25rem;
+  padding: 5px 10px;
+  color: white;
+  background-color: rgb(7, 96, 96);
+  font-size: 0.75rem;
+  text-align: center;
+  margin-right: 595px;
+}
+
+.task{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-radius: 0.2rem;
+  background-color: rgba(208, 208, 31, 0.608);
+}
+
+.add{
+  background-color: rgb(38, 104, 218);
+  padding: 0.35rem;
+  color: white;
+  border-radius: 0.15rem;
+  border: none;
+  font-size: 0.75rem;
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.add:hover{
+  background-color: rgb(39, 39, 208);
+}
+
+input{
+  padding: 0.35rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+  background-color: aliceblue;
+  border: 1px solid black;
+  /* box-shadow: 0 0 3px black; */
+}
+
+.taskAdded{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+  margin: 1rem 0;
+  width: 100%;
+  gap: 0.5rem;
+  background-color: rgb(185, 222, 255);
+  border: 1px solid black;
+  border-radius: 0.25rem;
+}
+
+.writeMsg{
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  border-radius: 0.35rem;
+  padding: 5px 10px;
+  opacity: 0;
+  transform: scale(0);
+  color: white;
+  background-color: rgb(7, 96, 96);
+  font-size: 0.6rem;
+  transform-origin: bottom;
+  transition: all 250ms ease-in-out;
+}
+.writeMsg.active{
+  opacity: 1;
+  transform: scale(1);
+}
