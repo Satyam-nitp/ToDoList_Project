@@ -23,7 +23,7 @@ A simple and elegant To-Do List application that helps you organize and manage y
 
 ## How to Use
 1. Open the application in a browser.
-2. Type a task into the input field and press **Enter** to add it to the list.
+2. Type a task into the input field and press **Enter** or **ADD** button to add it to the list.
 3. Use the X button to remove tasks.
 
 ## Preview
@@ -43,4 +43,4 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 ---
 
-*Created with ❤️ by [Satyam](https://github.com/your-username).*
+*Created with ❤️ by [Satyam](https://github.com/Satyam-nitp).*
