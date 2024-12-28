@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do List</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
   <div id="wrapper">
     <span class="maxLimit"></span>
-    <div class="container">
+    <div class="container" id="to-do-list">
 
       <h2>To Do List</h2>
 
@@ -25,10 +26,14 @@
         <p class="autoo" style="font-size: 0.75rem;">You are all done!!</p>
       </div>
 
-      <div class="count"></div>
+      <div class="footer">
+        <div class="count"></div>
+        <button id="download">Click here to download</button>
+      </div>
       
     </div>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>
