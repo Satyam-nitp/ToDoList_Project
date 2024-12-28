@@ -81,4 +81,13 @@ function crossCut(event){
   if(counter===0) dabba.appendChild(nota);
 }
 
-
+document.getElementById('download').addEventListener('click', function () {
+  const container = document.getElementById('to-do-list');
+  html2canvas(container).then(canvas => {
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = canvas.toDataURL(); // Convert canvas to data URL
+      link.download = 'to-do-list.png'; // File name for download
+      link.click(); // Trigger the download
+  });
+});
