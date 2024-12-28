@@ -6,6 +6,7 @@ A simple and elegant To-Do List application that helps you organize and manage y
 ## Features
 - **Add Tasks**: Add new tasks to your to-do list.
 - **Delete Tasks**: Remove tasks from the list.
+- **Download List**: You can download you list as well.
 - **User-Friendly Design**: Clean and intuitive UI design for ease of use.
 
 ## Files in the Project
